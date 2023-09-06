@@ -3,14 +3,14 @@ services:
   nginx:
     image: kim5257app/kim5257-default-nginx
     networks:
-      - backend
+      - backbone
       - local
     volumes:
       - /home/master/nfs/jeongdo-doc-nginx/conf.d:/etc/nginx/conf.d
       - /home/master/nfs/jeongdo-doc-nginx/htdocs:/usr/share/nginx/html
 networks:
   backend:
-    name: kim5257_gateway_backend
+    name: kim5257_gateway_backbone
     external: true
   local:
     external: false
