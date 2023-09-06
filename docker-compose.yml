@@ -9,7 +9,7 @@ services:
       - /home/master/nfs/jeongdo-doc-nginx/conf.d:/etc/nginx/conf.d
       - /home/master/nfs/jeongdo-doc-nginx/htdocs:/usr/share/nginx/html
 networks:
-  backend:
+  backbone:
     name: kim5257_gateway_backbone
     external: true
   local:
