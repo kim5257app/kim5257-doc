@@ -6,8 +6,8 @@ services:
       - backbone
       - local
     volumes:
-      - /home/master/nfs/jeongdo-doc-nginx/conf.d:/etc/nginx/conf.d
-      - /home/master/nfs/jeongdo-doc-nginx/htdocs:/usr/share/nginx/html
+      - /home/master/nfs/kim5257-doc-nginx/conf.d:/etc/nginx/conf.d
+      - /home/master/nfs/kim5257-doc-nginx/htdocs:/usr/share/nginx/html
 networks:
   backbone:
     name: kim5257_gateway_backbone

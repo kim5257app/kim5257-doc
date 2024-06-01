@@ -6,10 +6,10 @@ else
     exit
 fi
 
-if [ -d "/home/$USER/nfs/jeongdo-doc-nginx" ]; then
+if [ -d "/home/$USER/nfs/kim5257-doc-nginx" ]; then
     echo "NVR Nginx folder already exist"
 else
-    mkdir -p /home/$USER/nfs/jeongdo-doc-nginx/conf.d
-    mkdir -p /home/$USER/nfs/jeongdo-doc-nginx/htdocs
-    cp ./nginx/default.conf /home/$USER/nfs/jeongdo-doc-nginx/conf.d
+    mkdir -p /home/$USER/nfs/kim5257-doc-nginx/conf.d
+    mkdir -p /home/$USER/nfs/kim5257-doc-nginx/htdocs
+    cp ./nginx/default.conf /home/$USER/nfs/kim5257-doc-nginx/conf.d
 fi
